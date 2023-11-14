@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+   text-align: center;
+   color: white;
+   
+}
+
+h1{
+    font-family: sans-serif;
+}
+
+h3{
+    font-family: sans-serif; 
+    letter-spacing: 5px;
+}
+
+
+#start{
+    color:white;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.gmbtn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.row1, .row2{
+
+    display: flex;
+    
+    justify-content: center;
+    
+   gap: 10px;
+}
+
+#object{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 5px;
+}
+
+#colorBtns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#rgbcl{
+    width: 120px;
+    height: 25px;
+    padding: 2px;
+}
+
+#easyMode{
+    
+    color: white;
+    background-color: transparent;
+    border: none;
+    width: 10vh;
+    height: 5vh;
+}
+
+.easyAndHrd{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+     border: 1px solid white;
+}
+#hardMode{
+   
+    color: white;
+    background-color: transparent;
+    border: none;
+    width: 10vh;
+    height: 5vh;
+}
+.anime{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(41, 126, 45);
+    border: 1px solid rgb(39, 33, 33);
+    width: 10vh;
+    height: 5vh;
+    z-index: -1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    
+}
+
+@keyframes move {
+    from{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    to{
+        position: absolute;
+        top: 0;
+        right: 75px;
+    }
+    
+}
+@keyframes moveBack {
+    from{
+        position: absolute;
+        top: 0;
+        right: 75px;
+    }
+    to{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+}
